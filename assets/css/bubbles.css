@@ -82,7 +82,6 @@ span.hero-text {
 }
 
 .hero-text {
-  top: 170%;
   transform: translate(-50%, -50%); /* Center the text */
   text-align: center;
   color: white; /* Or your preferred text color */
@@ -92,8 +91,6 @@ span.hero-text {
 
 .hero-text.active {
   opacity: 1; /* Show the active text */
-    top: 170%;
-
 }
 
 .title {
