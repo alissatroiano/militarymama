@@ -24,45 +24,45 @@
 </head>
 
 <body>
-  <header>
-    <div class="row d-flex d-sm-none my-0 mx-auto fixed-top bg-head shadow-lg">
-      <div class="hamburger-nav">
-        <label>
-          <input type="checkbox">
-          <span class="menu">
-            <span class="hamburger"></span>
-          </span>
-          <ul class="hamburger-nav">
-            <li><a href="#reviews">Reviews</a></li>
-            <li> <a href="#pricing">Prices</a> </li>
-            <li> <a href="#contact">Contact</a> </li>
-          </ul>
-        </label>
-      </div>
-    </div>
-    <nav class="navbar d-none d-sm-flex bg-head shadow-lg fixed-top">
-      <div class="container-fluid d-flex me-auto">
-        <a class="navbar-brand condensed-font text-light my-2" href="#">
-          <img src="assets/images/logo.png" alt="Logo" width="50" height="auto"
-            class="d-inline-block align-text-middle">
-          <span class="company-name"> Laundry Service</span>
-        </a>
-        <div class="d-flex" id="navbarNav">
-          <ul class="navbar-nav list-group-horizontal mx-3">
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-
-          </ul>
+  <header class="bg-head">
+    <div class="site-navbar-top">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-4 text-tight text-yellow">
+              <div class="d-flex mr-auto">
+                <a href="#" class="d-flex align-items-center mr-4 text-tight text-yellow">
+                  <i class="fas fa-envelope mr-1"></i>
+                  <span class="ms-2 d-md-inline-block">info@domain.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-4 text-center text-tight text-yellow">
+            
+            </div>
+                 <div class="col-4 text-end text-tight text-yellow">
+              <div class="me-auto">
+                  <i class="fas fa-phone me-2 fa-sm"></i>
+                  <span class="d-md-inline-block">(917) 312-9946</span>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+        <div class="container-fluid text-start">
+          <div class="row d-flex justify-content-start align-items-start">
+            <div class="col-7">
+              <h1 class="my-2 pt-3 text-tight display-3 fw-bold">
+                <a href="#" class="text-light text-sans text-tight ms-3">Military Mama</a></h1>
+                <h6 class="display-6 text-tight ms-3 text-yellow">Full Service Laundry</h6>
+            </div>
+           <div class="col-5">
+        <div class="cover-img my-2 pt-3 mx-auto img-wrapper">
+          <img src="assets/images/logo.png" class="img-fluid" id="logoImg">
+        </div>
+      </div>
+            </div>
+          </div>
   </header>
 
   <!-- Hero-->
@@ -97,16 +97,10 @@
     <div class="bubble bubble-28"></div>
     <div class="bubble bubble-29"></div>
     <div class="bubble bubble-30"></div>
-    <div class="row d-flex py-5 mt-5 px-3">
-    <div class="col-12 col-sm-8 my-3">
-        <h1 class="display-4 fw-bold lh-1 mt-3 mt-sm-5 text-start">
-          <span class="text-light hero-fade text-sans mt-5 mt-sm-5" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="300"
-            id="heroTitleText">Military Mama</span>
-          <br>
-          <span class="text-yellow text-tight" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="500">Full Service Laundry</span>
-        </h1>
-        <br>
-        <h2 class="display-8 fw-bold lh-1 my-3 text-tight pb-3" id="hero-start">
+
+  <div class="row d-flex px-3">
+      <div class="col-12 col-sm-7">
+        <h3 class="display-8 fw-bold text-tight pb-5 mt-5" id="hero-start">
           <span class="text-yellow hero-fade me-1" data-aos="fade-in" data-aos-duration="2500"
             data-aos-delay="1000">Pick Up <i class="fas fa-chevron-right hero-icon"></i></span>
           <span class="text-light mx-1" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1200">
@@ -115,16 +109,10 @@
             Fold
             <i class="fas fa-chevron-right hero-icon"></i></span>
           <span class="text-light mx-1" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="2000">Deliver</span>
-        </h2>
-        <div class="d-flex justify-content-sm-start align-items-start mt-5 pt-3">
-          <button type="button" class="btn btn-yellow lg-w-auto w-shadow-lg text-btn"><a
-            class="text-dark"  href="#Reviews">Reviews</a></button>
-          <button type="button" class="btn btn-outline-yellow lg-w-auto shadow-lg mx-4 text-btn">Contact</button>
-        </div>
-      </div>
-      <div class="col-12 col-sm-4">
-        <div class="cover-img mt-5 mx-auto img-wrapper">
-          <img src="assets/images/logo.png" class="img-fluid" id="logoImg">
+        </h3>
+        <div class="d-flex justify-content-sm-start align-items-start mt-3 mx-auto pb-5 mb-5">
+          <a class="text-dark btn btn-yellow lg-w-auto w-shadow-lg text-btn" href="#reviews">Reviews</a>
+          <a class="btn btn-outline-yellow lg-w-auto shadow-lg mx-4 text-btn" href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -132,33 +120,34 @@
   <!--./end-hero-->
 
   <section class="reviews container" id="reviews">
-        <!-- title -->
-        <div class="col-12">
-          <h2 class="text-center">Reviews</h2>
-          <div class="underline"></div>
-        </div>
-        <!-- review -->
-        <article class="review">
-          <div class="img-container">
-            <img src="./person-1.jpeg" id="person-img" alt="">
-          </div>
-          <h4 id="author">sara jones</h4>
-          <p id="job">ux designer</p>
-          <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur consequuntur dolor magnam id illum atque debitis quam amet commodi?</p>
-          <!-- previous and next buttons  -->
-          <div class="button-container">
-            <button class="prev-btn">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="random-btn">Random review</button>
-            <button class="next-btn">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-            
-          </div>
+    <!-- title -->
+    <div class="col-12">
+      <h2 class="text-center">Reviews</h2>
+      <div class="underline"></div>
+    </div>
+    <!-- review -->
+    <article class="review">
+      <div class="img-container">
+        <img src="./person-1.jpeg" id="person-img" alt="">
+      </div>
+      <h4 id="author">sara jones</h4>
+      <p id="job">ux designer</p>
+      <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur consequuntur dolor magnam
+        id illum atque debitis quam amet commodi?</p>
+      <!-- previous and next buttons  -->
+      <div class="button-container">
+        <button class="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="random-btn">Random review</button>
+        <button class="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
 
-        </article>
-    </section>
+      </div>
+
+    </article>
+  </section>
 
   <!--Pricing-->
   <section class="container-fluid bg-main pricing mt-5 py-5" id="pricing">
@@ -221,60 +210,60 @@
     </div>
   </section>
 
-<!--Contact-->
-  <section class="container" id="contact">
-        <div class="col-12 text-center">
-            <h2>Contact</h2>
-        </div>
+  <!--Contact-->
+  <section class="container-fluid" id="contact">
+    <div class="row d-flex">
+      <div class="contact header col-12 col-sm-6">
+        <h2>Contact</h2>
+      </div>
 
-        <div class="contact-container col-12">
-            <div class="info-container">
-                <div class="location info-item">
-                    <div class="icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="information">
-                        <h4>Location</h4>
-                        <p>1001 Riverside Avenue, Jacksonville 32207, Florida, United States</p>
-                    </div>
-                </div>
-
-                <div class="email info-item">
-                    <div class="icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="information">
-                        <h4>Email</h4>
-                        <p>helloworld@example.com</p>
-                    </div>
-                </div>
-
-                <div class="call info-item">
-                    <div class="icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="information">
-                        <h4>Call:</h4>
-                        <p>+1 (904) 555 7878</p>
-                    </div>
-                </div>
-
-                <div class="open-hours info-item">
-                    <div class="icon">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                    <div class="information">
-                        <h4>Open Hours:</h4>
-                        <p>Mon - Friday: 8AM - 8PM</p>
-                        <p class="text-italic">Closed on Thursdays & Sundays</p>
-                    </div>
-                </div>
+      <div class="contact-container col-12 col-sm-6">
+        <div class="info-container">
+          <div class="location info-item">
+            <div class="icon">
+              <i class="fa-solid fa-location-dot"></i>
             </div>
+            <div class="information">
+              <h4>Location</h4>
+              <p>1001 Riverside Avenue, Jacksonville 32207, Florida, United States</p>
+            </div>
+          </div>
 
-           
+          <div class="email info-item">
+            <div class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="information">
+              <h4>Email</h4>
+              <p>helloworld@example.com</p>
+            </div>
+          </div>
+
+          <div class="call info-item">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="information">
+              <h4>Call:</h4>
+              <p>+1 (904) 555 7878</p>
+            </div>
+          </div>
+
+          <div class="open-hours info-item">
+            <div class="icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="information">
+              <h4>Open Hours:</h4>
+              <p>Mon - Sat: 11AM - 23PM</p>
+            </div>
+          </div>
         </div>
-    </section>
 
+
+      </div>
+    </div>
+  </section>
   <!--AOS Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -290,7 +279,7 @@
     });
   </script>
 
-<script src="assets/js/reviews.js"></script>
+  <script src="assets/js/reviews.js"></script>
 </body>
 
 </html>
