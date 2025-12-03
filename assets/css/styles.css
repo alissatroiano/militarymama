@@ -27,10 +27,6 @@ a {
   text-decoration: none;
 }
 
-button.btn.btn-yellow.lg-w-auto.shadow-lg.text-btn a {
-  color: #030423;
-}
-
 .bg-main {
   background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
 }
@@ -90,10 +86,11 @@ a.btn-outline-yellow,
   background-color: var(--yellow-2);
 }
 
+a.text-btn,
 .text-btn {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: 600;
 }
 
