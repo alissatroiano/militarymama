@@ -31,6 +31,10 @@ h6 {
   font-size: 1.25rem;
 }
 
+a.text-btn {
+  font-size: 12px;
+}
+
 header {
   background: none;
 }

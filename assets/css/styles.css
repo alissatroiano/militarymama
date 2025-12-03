@@ -29,10 +29,6 @@ a {
   text-decoration: none;
 }
 
-button.btn.btn-yellow.lg-w-auto.shadow-lg.text-btn a {
-  color: #030423;
-}
-
 .bg-main {
   background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
 }
@@ -92,10 +88,11 @@ a.btn-outline-yellow,
   background-color: var(--yellow-2);
 }
 
+a.text-btn,
 .text-btn {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -700,7 +697,6 @@ body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
-  line-height: 1.5;
   font-size: 0.875rem;
 }
 ul {
@@ -715,7 +711,6 @@ h3,
 h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
-  line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
 }
@@ -732,7 +727,6 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
@@ -993,9 +987,7 @@ Reviews
   color: var(--clr-primary-5);
   font-size: 0.85rem;
 }
-#info {
-  margin-bottom: 0.75rem;
-}
+
 .prev-btn,
 .next-btn {
   color: var(--clr-primary-7);
@@ -1027,3 +1019,15 @@ Reviews
 }
  
 /* ----------------- Contact */
+#contact {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+img.bubbles-left {
+  max-width: 100%;
+  height: 350px;
+  align-items: end;
+  justify-content: end;
+}
