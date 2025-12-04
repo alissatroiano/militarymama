@@ -35,14 +35,15 @@
         </div>
         <div class="col-4"></div>
         <div class="col-4 justify-content-end align-items-end text-end" id="toggle">
-          <button class="btn btn-main my-2 mx-auto" type="button" data-bs-toggle="collapse"
+          <button class="btn btn-main my-2 mx-auto bg-main" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
             <i class="fas fa-bars fa-2xl text-info"></i>
           </button>
           <div class="collapse navbar-collapse bg-main text-light" id="collapseWidthExample">
             <ul class="list-group-horizontal text-center align-items-center my-0 mx-auto py-5">
-              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a>Link</a></li>
-              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a>Link</a></li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#about">About</a></li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#prices">Pricing</a></li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#contact">Contact</a></li>
 
             </ul>
 
@@ -99,8 +100,8 @@
       <div class="bubble bubble-28"></div>
       <div class="bubble bubble-29"></div>
       <div class="bubble bubble-30"></div>
-      <div class="row d-flex my-3 mx-auto">
-        <div class="col-12 justify-content-center align-items-center text-center">
+      <div class="row d-flex my-3 mx-auto mt-5 pt-3" id="about">
+        <div class="col-12 justify-content-center align-items-center text-center" role="banner">
           <h3 class="display-6 text-tight py-3" id="hero-start">
             <span class="text-yellow hero-fade me-1" data-aos="fade-in" data-aos-duration="2500"
               data-aos-delay="1000">Pick Up <i class="fas fa-chevron-right hero-icon"></i></span>
@@ -116,14 +117,18 @@
       </div>
       <div class="row d-flex my-3 pb-3 mx-auto">
         <div class="col-12 text-center">
+          <p class="text-tight text-light mx-3 mt-3">
+            Welcome to Military Mama Laundry Services, where laundry goes from <span class="oh-no">"Oh no…”</span>
+            to <span class="oh-wow">“Oh WOW!”</span>
+          </p>
           <p class="text-tight text-light mx-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            With free pickup and drop-off, we handle every load with care, precision, and a little mama-style love.
+            Fast, friendly, and freakishly convenient, we make laundry day disappear—so you can focus on everything
+            else. Clean clothes. Zero stress. Mama’s got you.
           </p>
         </div>
-        </div>
-        <div class="row d-flex justify-content-center align-items-center mt-3">
+      </div>
+      <div class="row text-center d-flex justify-content-center align-items-center my-3 mx-auto pb-3">
         <div class="col-4">
           <a class="text-dark btn btn-yellow lg-w-auto w-shadow-lg text-btn" href="#prices">Pricing</a>
         </div>
@@ -139,7 +144,7 @@
       <!-- review -->
       <article class="review text-tight">
         <div class="img-container">
-          <img src="./person-1.jpeg" id="person-img" alt="">
+          <img src="" id="person-img" alt="user reviews">
         </div>
         <h4 id="customer"></h4>
         <p id="service"></p>
@@ -213,41 +218,36 @@
       </div>
       <div class="row d-flex my-0 mx-auto pb-5">
         <div class="col-12 col-sm-6 justify-content-end align-items-end text-end d-none d-sm-flex">
-          <img src="assets/images/bubbles.png" class="img-fluid">
+          <img src="assets/images/ball.gif" class="img-fluid">
         </div>
         <div class="col-12 col-sm-6">
-          <div class="info-container text-center text-sm-start mt-2 mt-sm-1">
-            <div class="location info-item mt-3">
-              <div class="icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-
-              <div class="call info-item my-3 pt-3 pt-sm-0">
-                <h4 class=" fw-bold text-tight"><i class="fas fa-phone"></i>CALL </h4>
-                <div class="information">
-                  <a href="tel:9173129946" class="text-tight text-dark">
-                    mmcleaningsvcs@yahoo.com</a>
+          <div class="card h-100 contact-card">
+            <div class="info-container text-center text-sm-start mt-2 mt-sm-1">
+                <div class="call info-item my-3 pt-3 pt-sm-0">
+                  <h3 class=" fw-bold text-tight"><i class="fas fa-phone"></i>CALL </h3>
+                    <a href="tel:9173129946" class="text-tight text-dark">
+                      mmcleaningsvcs@yahoo.com</a>
                 </div>
-              </div>
-              <div class="information text-tight pt-3">
-                <h4 class="fw-bold text-tight">
-                  <i class="fas fa-map-pin"></i>
-                  SERVICE AREAS:
-                </h4>
-                <p class="text-tight text-dark">The Bronx, NYC, Westchester County</p>
-              </div>
-              <div class="email info-item my-3 pt-3">
-                <h4 class="fw-bold text-tight"><i class="fas fa-envelope"></i> EMAIL</h4>
-                <div class="information">
-                  <a href="mailto:mmcleaningsvcs@yahoo.com" class="text-tight text-dark">
-                    mmcleaningsvcs@yahoo.com</a>
+                <div class="information text-tight pt-3">
+                  <h4 class="fw-bold text-tight">
+                    <i class="fas fa-map-pin"></i>
+                    SERVICE AREAS:
+                  </h4>
+                  <p class="text-tight text-dark">The Bronx, NYC, Westchester County</p>
                 </div>
-              </div>
+                <div class="email info-item my-3 pt-3">
+                  <h4 class="fw-bold text-tight"><i class="fas fa-envelope"></i> EMAIL</h4>
+                  <div class="information">
+                    <a href="mailto:mmcleaningsvcs@yahoo.com" class="text-tight text-dark">
+                      mmcleaningsvcs@yahoo.com</a>
+                  </div>
+                </div>
 
-              <div class="my-3 pt-3">
-                <h4 class=" fw-bold text-tight"><i class="fas fa-clock"></i>HOURS </h4>
-                <p class="text-tight text-dark mb-0 pb-0">MON-FRI: 8AM - 8PM</p>
-                <p class="text-tight">Closed Thursdays & Sundays</p>
+                <div class="my-3 pt-3">
+                  <h4 class=" fw-bold text-tight"><i class="fas fa-clock"></i>HOURS </h4>
+                  <p class="text-tight text-dark mb-0 pb-0">MON-FRI: 8AM - 8PM</p>
+                  <p class="text-tight">Closed Thursdays & Sundays</p>
+                </div>
               </div>
             </div>
           </div>
@@ -268,14 +268,8 @@
   <!--Initialize AOS Library-->
   <script>
     AOS.init();
-
-    // Auto-close hamburger menu when link is clicked
-    document.querySelectorAll('.hamburger-nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.querySelector('input[type="checkbox"]').checked = false;
-      });
-    });
   </script>
+
   <script src="assets/js/reviews.js"></script>
   <script src="assets/js/text.js"></script>
 

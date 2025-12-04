@@ -104,7 +104,7 @@ a.text-btn,
 .main {
   position: relative;
   max-width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   overflow: hidden;
   background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
 }
@@ -338,13 +338,16 @@ ul.hamburger-nav:hover {
   animation: scroll 25s linear infinite; 
   padding-right: 2em; 
   color: var(--accent-color);
-
 }
 
 .text-item {
   font-size: 1.2em; 
   /* Add some space between the duplicated items */
   margin: 0px 50px; 
+}
+
+h3#hero-start {
+    font-size: 1.5rem;
 }
 
 @keyframes scroll {
@@ -1052,6 +1055,10 @@ section#reviews {
 #contact {
   max-width: 100%;
   height: auto;
+  background: url('../images/soap-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 img.bubbles-left {
@@ -1061,7 +1068,14 @@ img.bubbles-left {
   justify-content: end;
 }
 
-@media (min-width: 768px) {
+.card.contact-card {
+  background-color: #fafafa30;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+@media (min-width: 820px) {
 
  .slider-container {
   width: 100%;
@@ -1072,5 +1086,18 @@ img.bubbles-left {
   text-align: center;
   margin-left: -30px;
 }
-
+.main {
+  position: relative;
+  max-width: 100%;
+  min-height: 80vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
+}
+.row.d-flex.justify-content-center.align-items-center.mt-3 {
+    padding-bottom: 40px;
+}
+h3#hero-start {
+    font-size: 2.5rem;
+    text-align: center;
+}
 }
