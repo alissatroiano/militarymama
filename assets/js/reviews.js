@@ -2,39 +2,39 @@
 const reviews = [
   {
     id: 1,
-    customer: "Anna Johnson",
-    service: "She Uses the Best Products!",
+    customer: "Ayleen Z.",
+    service: "Clothes Smell So Good!",
     img:
       "assets/images/detergent-icon.png",
     review:
-      "Ayisha uses the best laundry detergent and products. My clothes smell better than my perfume whens she drops them off!",
+      "Ayesha takes care of our baby's clothes as well as ours with much care. Our clothes always comes back super clean and smelling good. Also, her folding is immaculate. Communication is always great and she is flexible if need be. Ayesha definitely makes our lives easier by taking the load of our backs. Literally!",
   },
    {
     id: 2,
-    customer: "Shyan Smith",
-    service: "Neat, tidy folding",
+    customer: "Devyn W.",
+    service: "Spotless & Tidy Folding",
     img:
       "assets/images/folded-clothes.png",
     review:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+      "My husband and I have been using Ayesha’s services for about a year now since we moved to Harlem and we couldn’t be happier! She is so easy to work with and very communicative. Our clothes always come back spotless and carefully folded. She’s a staple in our household now and I couldn’t be more grateful for her hard work. If you’re on the fence, this is your sign to hire Ayesha! You won’t regret it!!",
   },
   {
     id: 3,
-    name: "Peter Jones",
-    service: "Same Day Laundry is a Life Saver!",
+    customer: "Louise C.",
+    service: "Above & Beyond",
     img:
-      "assets/images/clock.png",
+      "assets/images/pickupdelivery.png",
     review:
-      "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+      "Ayesha kept me informed every step of the process (from pick up to drop-off coordination). The laundry was returned in the time-window promised. My clothes were clean, smelled amazing and were professionally folded. The evening of the pick-up it was raining and she went above and beyond taking the time to protect my laundry bags from the rain by covering them in plastic bags. She is very personable and a pleasure to work with!",
   },
   {
     id: 4,
-    customer: "Bill Anderson",
-    service: "the boss",
+    customer: "Jose A.",
+    service: "Helps my Busy Life!",
     img:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+      "assets/images/clock.png",
     review:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+      "You don’t understand how much your service helps me between work and my DJ career. THANK YOU SO MUCH, Military Mama!",
   },
 ];
 

@@ -135,6 +135,16 @@ span.oh-wow {
   color: var(--primary-color);
 }
 
+.text-navy {
+  color: var(--navy);
+}
+
+.text-italic {
+  color: var(--dark);
+  font-style: italic;
+  font-size: 1rem;
+}
+
 .text-sans {
   font-family: "Montserrat", sans-serif;
 }
@@ -725,6 +735,10 @@ img#dirtyLaundry {
 q {
   font-style: italic;
   padding-bottom: 10px;
+  font-size: 1rem;
+}
+p#service {
+  font-size: 1.2rem;
 }
 
 /*
@@ -734,150 +748,7 @@ Fonts
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-/*
-=============== 
-Variables
-===============
-*/
 
-:root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
-}
-/*
-=============== 
-Global Styles
-===============
-*/
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: var(--ff-secondary);
-  background: none;
-  color: var(--clr-grey-1);
-  font-size: 0.875rem;
-}
-
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 0.875rem;
-}
-
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
-/*  global classes */
-
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
-
-
-/*
-=============== 
-Reviews
-===============
-*/
 section#reviews {
   display: grid;
   place-items: center;
@@ -1108,152 +979,6 @@ section#reviews {
 .random-btn:hover {
   background: var(--navy);
   color: var(--light);
-}
-
-/* ------------------ Pricing */
-/* Global Styles */
-:root {
-  --primary-color: #46bfe4;
-  --blue-hov: #1794ba;
-  --navy: #0b0224;
-  --accent-color: #1ceaed;
-  --primary-transparent: rgba(34, 7, 88, 0.481);
-  --light: #fafafa;
-  --lighter: #f5f5f5;
-  --dark: #2c2c2c;
-  --grey: #cfcfcf;
-  --light-grey: #eeecec;
-  --dark-grey: #4d4d4d;
-  --darker: #080808;
-  --dark-transparent: #090432dd;
-  --black: #000000;
-  --yellow: #fdd935;
-  --yellow-1: #e9bd43;
-  --yellow-2: #f5b935;
-  --yellow-hov: #be8408;
-  --size: clamp(10rem, 1rem + 40vmin, 30rem);
-  --gap: calc(var(--size) / 14);
-  --duration: 60s;
-  --scroll-start: 0;
-  --scroll-end: calc(-100% - var(--gap));
-  --primary-font: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-.bg-main {
-  background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
-}
-
-.bg-head {
-  background-color: #030423;
-}
-
-.bg-grey {
-  background-color: var(--grey);
-}
-
-.bg-trans {
-  background-color: transparent;
-  background: none;
-}
-
-.bg-yellow-light {
-  background-color: #fec852;
-}
-
-.bg-yellow {
-  background-color: var(--yellow-2);
-}
-
-button {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-.btn-yellow,
-.bg-yellow {
-  background-color: var(--yellow-2);
-}
-
-.btn-yellow:hover {
-  background-color: var(--yellow);
-}
-
-.bg-trans {
-  background-color: var(--primary-transparent);
-}
-
-.main-font {
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-}
-
-.condensed-font {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-a.btn-outline-yellow,
-.btn-outline-yellow {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  border-color: var(--yellow-2);
-  font-size: 1.2rem;
-  color: var(--yellow-2);
-}
-
-.btn-outline-yellow:hover {
-  background-color: var(--yellow-2);
-}
-
-a.text-btn,
-.text-btn {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.main {
-  position: relative;
-  max-width: 100%;
-  min-height: 50vh;
-  overflow: hidden;
-  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
-}
-
-
-p.text-tight.text-light.mx-3 {
-  font-size: 1rem;
-}
-
-span.oh-no {
-  font-weight: 800;
-  color: var(--yellow-2);
-  text-transform: lowercase;
-}
-
-span.oh-wow {
-  font-weight: 800;
-  color: var(--primary-color);
-  text-transform: uppercase;
-}
-
-.text-main {
-  color: var(--primary-color);
-}
-
-.text-sans {
-  font-family: "Montserrat", sans-serif;
-}
-
-.text-tight {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-.text-yellow {
-  color: var(--yellow-1);
 }
 
 /* ---------------- Header ---------------- */
@@ -1832,79 +1557,12 @@ q {
   padding-bottom: 10px;
 }
 
-/*
-=============== 
-Fonts
-===============
-*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
-/*
-=============== 
-Variables
-===============
-*/
-
-:root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
-}
-/*
-=============== 
-Global Styles
-===============
-*/
-
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
-  font-family: var(--ff-secondary);
-  background: none;
-  color: var(--clr-grey-1);
-  font-size: 0.875rem;
 }
 
 ul {
@@ -1921,18 +1579,6 @@ h4 {
   text-transform: capitalize;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 0.875rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -2252,16 +1898,8 @@ p.price-details {
   overflow: visible;
 }
 
-.details{
-  position: absolute;
-  z-index: 2;
-  max-width: 100%;
-  height: auto;
-  -webkit-filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.4));
-  filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.4));
-  transform: rotate(0deg) translate(0, 0);
-  transition-property: transform;
-  transition-duration: .3s;
+.price-tier-card {
+  background-color: var(--yellow-1);
 }
 
 section#prices {
@@ -2394,142 +2032,6 @@ p.price-details {
   height: auto;
 }
 
-/* Global Styles */
-:root {
-  --primary-color: #46bfe4;
-  --blue-hov: #1794ba;
-  --navy: #0b0224;
-  --accent-color: #1ceaed;
-  --primary-transparent: rgba(34, 7, 88, 0.481);
-  --light: #fafafa;
-  --lighter: #f5f5f5;
-  --dark: #2c2c2c;
-  --grey: #cfcfcf;
-  --light-grey: #eeecec;
-  --dark-grey: #4d4d4d;
-  --darker: #080808;
-  --dark-transparent: #090432dd;
-  --black: #000000;
-  --yellow: #fdd935;
-  --yellow-1: #e9bd43;
-  --yellow-2: #f5b935;
-  --yellow-hov: #be8408;
-  --size: clamp(10rem, 1rem + 40vmin, 30rem);
-  --gap: calc(var(--size) / 14);
-  --duration: 60s;
-  --scroll-start: 0;
-  --scroll-end: calc(-100% - var(--gap));
-  --primary-font: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-.bg-main {
-  background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
-}
-
-.bg-head {
-  background-color: #030423;
-}
-
-.bg-grey {
-  background-color: var(--grey);
-}
-
-.bg-trans {
-  background-color: transparent;
-  background: none;
-}
-
-.bg-yellow-light {
-  background-color: #fec852;
-}
-
-.bg-yellow {
-  background-color: var(--yellow-2);
-}
-
-button {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-.btn-yellow,
-.bg-yellow {
-  background-color: var(--yellow-2);
-}
-
-.btn-yellow:hover {
-  background-color: var(--yellow);
-}
-
-.bg-trans {
-  background-color: var(--primary-transparent);
-}
-
-.main-font {
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-}
-
-.condensed-font {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-a.btn-outline-yellow,
-.btn-outline-yellow {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  border-color: var(--yellow-2);
-  font-size: 1.2rem;
-  color: var(--yellow-2);
-}
-
-.btn-outline-yellow:hover {
-  background-color: var(--yellow-2);
-}
-
-.main {
-  position: relative;
-  max-width: 100%;
-  min-height: 50vh;
-  overflow: hidden;
-  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
-}
-
-
-p.text-tight.text-light.mx-3 {
-  font-size: 1rem;
-}
-
-span.oh-no {
-  font-weight: 800;
-  color: var(--yellow-2);
-  text-transform: lowercase;
-}
-
-span.oh-wow {
-  font-weight: 800;
-  color: var(--primary-color);
-  text-transform: uppercase;
-}
-
-.text-main {
-  color: var(--primary-color);
-}
-
-.text-sans {
-  font-family: "Montserrat", sans-serif;
-}
-
-.text-tight {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-.text-yellow {
-  color: var(--yellow-1);
-}
 
 /* ---------------- Header ---------------- */
 .logo-wrapper {
@@ -2857,36 +2359,6 @@ img#logoImg {
   height: auto;
 }
 
-/* Base bubble style */
-.bubble {
-  position: absolute;
-  bottom: -80px;
-  border-radius: 50%;
-  opacity: 0.2;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(255, 255, 255, 0.975),
-    rgba(255, 255, 255, 0.1) 60%,
-    rgba(255, 255, 255, 0) 90%
-  );
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
-    inset 0 5px 15px rgba(255, 255, 255, 0.5);
-  mix-blend-mode: screen;
-
-  animation: rise 12s infinite ease-in;
-  animation-delay: -12s !important;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  border-radius: 50px;
-  background: rgb(255, 255, 255);
-  position: absolute;
-  top: 20%;
-  right: 20%;
-}
-
 /* Generate 30 variations manually (SCSS loop equivalent) */
 .bubble-1 {
   left: 5%;
@@ -3105,203 +2577,6 @@ img#dirtyLaundry {
 q {
   font-style: italic;
   padding-bottom: 10px;
-}
-
-/*
-=============== 
-Fonts
-===============
-*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
-/*
-=============== 
-Variables
-===============
-*/
-
-:root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
-}
-/*
-=============== 
-Global Styles
-===============
-*/
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: var(--ff-secondary);
-  background: none;
-  color: var(--clr-grey-1);
-  font-size: 0.875rem;
-}
-
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 0.875rem;
-}
-
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
-/*  global classes */
-
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
-
-
-/*
-=============== 
-Reviews
-===============
-*/
-section#reviews {
-  display: grid;
-  place-items: center;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.underline {
-  height: 0.25rem;
-  width: 5rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
-}
-.review-wrapper {
-  width: 80vw;
-  max-width: var(--fixed-width);
-}
-
-.review {
-  padding: 1.5rem 2rem;
-  transition: var(--transition);
-  text-align: center;
-}
-
-.img-container {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  background-color: var(--dark-transparent);
-  border-radius: 50%;
-  margin: 0px auto;
-}
-
-#person-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 50%;
-  position: relative;
 }
 
 .img-container::after {
@@ -4065,67 +3340,6 @@ q {
   font-style: italic;
   padding-bottom: 10px;
 }
-
-/*
-=============== 
-Fonts
-===============
-*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
-/*
-=============== 
-Variables
-===============
-*/
-
-:root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
-}
-/*
-=============== 
-Global Styles
-===============
-*/
 
 *,
 ::after,
