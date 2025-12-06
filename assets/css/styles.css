@@ -75,6 +75,7 @@ button {
 .main-font {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 .condensed-font {
@@ -109,8 +110,21 @@ a.text-btn,
   background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
 }
 
+
 p.text-tight.text-light.mx-3 {
   font-size: 1rem;
+}
+
+span.oh-no {
+  font-weight: 800;
+  color: var(--yellow-2);
+  text-transform: lowercase;
+}
+
+span.oh-wow {
+  font-weight: 800;
+  color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .text-main {
@@ -143,20 +157,16 @@ p.text-tight.text-light.mx-3 {
 
 button.btn.btn-main.my-2.mx-auto.bg-main {
     position: fixed;
-    left: 0;
+    left: 20px;
     top: 0;
 }
 
 ul.list-group-horizontal.text-center.align-items-center.my-0.mx-auto.py-5 {
     position: fixed;
-    left: 0;
+    left: 20px;
     background-color: #030423b8;
-    /* margin-top: -20px; */
-    left: 30;
     top: 60px;
     z-index: 0;
-    /* width: 400px; */
-    /* text-align: start; */
 }
 
 i.fas.fa-bars.fa-2xl.text-yellow {
