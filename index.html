@@ -34,6 +34,8 @@
           </button>
           <div class="collapse navbar-collapse bg-main text-light" id="navMenuDropdown">
             <ul class="list-group-horizontal text-center align-items-center my-0 mx-auto py-5">
+                <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#" class="top-nav">Home</a>
+              </li>
               <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#about" class="top-nav">About</a>
               </li>
               <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#prices"
@@ -169,28 +171,27 @@
       </div>
       <div class="row d-flex my-0 mx-auto justify-content-center py-5 mb-3 mb-sm-4 px-sm-3">
         <div class="col-6 text-center align-items-center justify-content-center my-0 mx-auto">
-            <div class="card h-100 price-tier-card">
-                <h3 class="price-tier text-tight mt-3 text-center text-navy fw-bold">Standard</h3>
-                <p class="standard-tier text-sans mb-3 text-center text-navy">$2.50 per pound</p>
-                <p class="text-tight text-center text-navy text-italic"> 20 pound minimum</p>
-                <p class="text-tight fw-bold text-center text-navy">Next Day Delivery!</p>
-            </div>
+          <div class="card h-100 price-tier-card">
+            <h3 class="price-tier text-tight mt-3 text-center text-navy fw-bold">Standard</h3>
+            <p class="standard-tier text-sans mb-3 text-center text-navy">$2.50 per pound</p>
+            <p class="text-tight text-center text-navy text-italic"> 20 pound minimum</p>
+            <p class="text-tight fw-bold text-center text-navy">Next Day Delivery!</p>
+          </div>
         </div>
         <div class="col-6 text-center align-items-center justify-content-center my-0 mx-auto">
-            <div class="card h-100 price-tier-card">
-                <h3 class="price-tier text-tight mt-3 text-center text-navy fw-bold">Express</h3>
-                <p class="standard-tier text-sans mb-3 text-center text-navy">$3.50 per pound</p>
-                <p class="text-tight fw-bold text-center text-navy">Same Day Delivery!</p>
-                <p class="text-tight text-center text-navy text-italic fw-bold">Order must be placed by 11:00am</p>
-
-              </div>
+          <div class="card h-100 price-tier-card">
+            <h3 class="price-tier text-tight mt-3 text-center text-navy fw-bold">Express</h3>
+            <p class="standard-tier text-sans mb-3 text-center text-navy">$3.50 per pound</p>
+            <p class="text-tight text-center text-navy text-italic fw-bold">Order must be placed by 11:00am</p>
+            <p class="text-tight fw-bold text-center text-navy">Same Day Delivery!</p>
+          </div>
         </div>
       </div>
 
     </section>
 
     <!--Contact-->
-    <section class="container-fluid bg-head bg-yellow" id="contact">
+    <section class="container-fluid bg-head bg-yellow py-3" id="contact">
       <div class="row d-flex my-0 mx-auto">
         <div class="col-12 text-center mt-3">
           <h2 class="display-3 text-tight fw-bold">CONTACT</h2>
@@ -231,7 +232,32 @@
       </div>
     </section>
 
-
+    <!--Footer-->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center"> 
+          <a href="#about"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="LOGO"> 
+            <img
+              class="img-fluid" width="50" height="24" aria-hidden="true" src="assets/images/logo.png">
+           </a> <span class="mb-3 mb-md-0 text-body-secondary text-tight fw-bold">Military Mama Laundry Service</span> </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+   
+                 <li class="list-item mx-2">
+            <a class="text-tight text-navy fw-bold" href="#">About</a>
+            </li>
+              <li class="list-item mx-2">
+            <a class="text-tight text-navy fw-bold" href="#about">Services</a>
+            </li>
+            <li class="list-item mx-2">
+            <a class="text-tight text-navy fw-bold" href="#about">Pricing</a>
+            </li>
+                       <li class="list-item mx-2">
+            <a class="text-tight text-navy fw-bold" href="#about">Contact</a>
+            </li>
+        </ul>
+      </footer>
+    </div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -251,8 +277,5 @@
   <script src="assets/js/reviews.js"></script>
   <script src="assets/js/text.js"></script>
 
-
-
 </body>
-
 </html>
