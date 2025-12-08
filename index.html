@@ -34,7 +34,7 @@
           </button>
           <div class="collapse navbar-collapse bg-main text-light" id="navMenuDropdown">
             <ul class="list-group-horizontal text-center align-items-center my-0 mx-auto py-5">
-                <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#" class="top-nav">Home</a>
+              <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#services" class="top-nav">Services</a>
               </li>
               <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#about" class="top-nav">About</a>
               </li>
@@ -49,7 +49,8 @@
 
         </div>
         <div class="col-4 text-center align-items-center justify-content-center" id="navPhone">
-          <a class="text-yellow text-center text-tight" href="tel:9173129946"><i class="fas fa-phone me-1 fw-bold"></i> (917) 312-9946</a>
+          <a class="text-yellow text-center text-tight" href="tel:9173129946"><i class="fas fa-phone me-1 fw-bold"></i>
+            (917) 312-9946</a>
         </div>
         <div class="col-4"></div>
       </div>
@@ -70,10 +71,7 @@
     </div>
   </header>
 
-  <main>
-    <!-- Hero-->
-    <section class="main container-fluid">
-      <div class="bubble bubble-1"></div>
+     <div class="bubble bubble-1"></div>
       <div class="bubble bubble-2"></div>
       <div class="bubble bubble-3"></div>
       <div class="bubble bubble-4"></div>
@@ -103,9 +101,12 @@
       <div class="bubble bubble-28"></div>
       <div class="bubble bubble-29"></div>
       <div class="bubble bubble-30"></div>
-      <div class="row d-flex my-3 mx-auto" id="about">
+  <main>
+    <!-- Hero-->
+    <section class="container-fluid" id="hero">
+      <div class="row d-flex my-3 mx-auto">
         <div class="col-12 justify-content-center align-items-center text-center" role="banner">
-          <h3 class="display-6 text-tight pt-3 fw-bold" id="hero-start">
+          <h3 class="display-6 text-tight py-3 py-sm-5 mt-3 mt-sm-4 fw-bold" id="hero-start">
             <span class="text-yellow hero-fade me-1" data-aos="fade-in" data-aos-duration="2500"
               data-aos-delay="1000">Pick Up <i class="fas fa-chevron-right hero-icon"></i></span>
             <span class="text-light mx-1" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1200">
@@ -118,18 +119,7 @@
           </h3>
         </div>
       </div>
-      <div class="row d-flex my-3 pb-3 mx-auto justify-content-center align-items-center text-center lead-text">
-        <div class="col-11 justify-content-center align-items-center text-center lead-text">
-          <p class="text-sans text-light mt-3 about-text">
-            Welcome to Military Mama Laundry Services, where laundry goes from <span class="oh-no">"Oh No…”</span>
-            to <span class="oh-wow">“Oh WOW!”</span>
-            With free pickup and drop-off, we handle every load with care, precision, and a little mama-style love.
-            Fast, friendly, and freakishly convenient, we make laundry day disappear—so you can focus on everything
-            else. Clean clothes. Zero stress. Mama’s got you.
-          </p>
-        </div>
-      </div>
-      <div class="row text-center d-flex justify-content-center align-items-center my-3 mx-auto pb-3 pb-sm-5 hero-btns">
+      <div class="row text-center d-flex justify-content-center align-items-center my-3 mx-auto pb-3 pb-sm-5 mb-sm-5 hero-btns">
         <div class="col-4">
           <a class="text-dark btn btn-yellow sm-w-auto w-shadow-lg text-btn" href="#prices">Pricing</a>
         </div>
@@ -141,10 +131,34 @@
     </section>
     <!--./end-hero-->
 
-    <section class="container-fluid bg-yellow reviews" id="reviews">
-      <!-- review -->
-      <article class="review text-tight">
-        <div class="img-container">
+    <!--Services-->
+    <section class="services container-fluid" id="services">
+      <div class="row d-flex">
+        <div class="box-custom bg-trans" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+          <div class="col-xs-8 col-sm-4">
+            <i class="fas fa-car text-yellow fa-3x"></i>
+          </div>
+          <div class="media-box-inner"><span class="icon fa-play"></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--./services-->
+
+<!--About-->
+<section class="about container-fluid bg-yellow my-3 mx-auto" id="about">
+  <div class="row d-flex justify-content-center align-items-center text-center">
+    <div class="col-10 my-3 mx-auto text-center text-tight">
+    <h2 class="display-5 fw-bold my-3">About</h2>
+    <hr>
+ <p class="text-sans about pb-3">
+    Welcome to Military Mama Laundry Services, where laundry goes from "Oh No…” to “Oh WOW!” With free pickup and drop-off, we handle every load with care, precision, and a little mama-style love. Fast, friendly, and freakishly convenient, we make laundry day disappear—so you can focus on everything else. Clean clothes. Zero stress. Mama’s got you.
+    </p>
+    </div>
+  </div>
+  <div class="text-center align-items-center justify-content-center" id="reviews">
+        <article class="review text-tight text-center">
+          <div class="img-container">
           <img src="" id="person-img" alt="user reviews">
         </div>
         <h4 id="customer"></h4>
@@ -162,7 +176,9 @@
         </div>
 
       </article>
-    </section>
+  </div>
+  </div>
+</section>
 
     <!--Pricing-->
     <section class="container-fluid bg-main pricing p-3 py-sm-4  my-0 mx-auto" id="prices">
@@ -237,29 +253,29 @@
     <!--Footer-->
     <div class="container-fluid bg-main">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-main">
-        <div class="col-md-4 d-flex align-items-center"> 
-          <a href="#about"
-            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="LOGO"> 
-            <img
-              class="img-fluid" width="50" height="24" aria-hidden="true" src="assets/images/logo.png">
-           </a> <span class="mb-3 mb-md-0 text-light text-tight fw-bold">Military Mama Laundry Service</span> </div>
-                 <div class="col-4 text-center align-items-center justify-content-center">
-          <a class="text-yellow text-center text-tight fw-bold" href="tel:9173129946"><i class="fas fa-phone me-1"></i> (917) 312-9946</a>
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="#about" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="LOGO">
+            <img class="img-fluid" width="50" height="24" aria-hidden="true" src="assets/images/logo.png">
+          </a> <span class="mb-3 mb-md-0 text-light text-tight fw-bold">Military Mama Laundry Service</span>
+        </div>
+        <div class="col-4 text-center align-items-center justify-content-center">
+          <a class="text-yellow text-center text-tight fw-bold" href="tel:9173129946"><i class="fas fa-phone me-1"></i>
+            (917) 312-9946</a>
         </div>
         <ul class="nav col-4 justify-content-end list-unstyled d-flex">
-   
-                 <li class="list-item mx-2">
+
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#">About</a>
-            </li>
-              <li class="list-item mx-2">
+          </li>
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#about">Services</a>
-            </li>
-            <li class="list-item mx-2">
+          </li>
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#about">Pricing</a>
-            </li>
-                       <li class="list-item mx-2">
+          </li>
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#about">Contact</a>
-            </li>
+          </li>
         </ul>
       </footer>
     </div>
@@ -286,12 +302,12 @@
 
   <script src="assets/js/reviews.js"></script>
   <script src="assets/js/text.js"></script>
-  
+
   <script>
     // Back to Top Button
     const backToTopBtn = document.getElementById('backToTop');
     const navPhone = document.getElementById('navPhone');
-    
+
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 300) {
         backToTopBtn.classList.add('show');
@@ -303,11 +319,12 @@
         navPhone.style.visibility = 'visible';
       }
     });
-    
+
     backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 
 </body>
+
 </html>
