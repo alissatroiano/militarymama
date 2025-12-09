@@ -335,6 +335,17 @@
     backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+    
+    // Auto-close mobile nav on link click
+    document.querySelectorAll('#navMenuDropdown a').forEach(link => {
+      link.addEventListener('click', () => {
+        const navToggle = document.querySelector('[data-bs-toggle="collapse"]');
+        const navCollapse = document.getElementById('navMenuDropdown');
+        if (navCollapse.classList.contains('show')) {
+          navToggle.click();
+        }
+      });
+    });
   </script>
 
 </body>
