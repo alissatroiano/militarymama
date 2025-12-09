@@ -2815,9 +2815,8 @@ q {
     background-clip: text;
     color: transparent;
     text-shadow: rgba((8, 8, 8, 0.5)) 0px 3px 3px;
-
   font-size: 1.75rem;
-  margin: 30px auto;
+  margin: 10px auto;
   letter-spacing: 1.25px;
 }
 
@@ -2863,7 +2862,7 @@ q {
   display: flex;
   justify-content: start;
   align-items: start;
-  height: 10vh; /* Example: full viewport height */
+  margin-bottom: 20px; /* Example: full viewport height */
 }
 
 .typewriter-text {
@@ -2871,8 +2870,9 @@ q {
   white-space: nowrap; /* Prevents text from wrapping */
   margin: 0 auto; /* Centers the text horizontally */
   animation: 
-    typing 3.5s steps(40, end), /* Typing animation */
-    blink-caret .75s step-end infinite; /* Blinking cursor animation */
+    typing 4s steps(50, end) infinite, /* Typing animation */
+    blink-caret .75s step-end infinite;Z
+
 }
 
 /* Keyframes for the typing animation */
@@ -2883,8 +2883,8 @@ q {
 
 /* Keyframes for the blinking cursor animation */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; } /* Cursor color at half animation */
+  from, to { border-color: var(--navy) }
+  50% { border-color: rgb(0, 0, 44); } /* Cursor color at half animation */
 }
 
 /* ---------------- Header ---------------- */
@@ -3474,6 +3474,8 @@ body {
   font-family: var(--ff-secondary);
   background: none;
   color: var(--clr-grey-1);
+    background: var(--navy);
+
   font-size: 0.875rem;
 }
 
@@ -4030,6 +4032,8 @@ h3.info-item {
   text-align: center;
   margin-left: -30px;
 }
+
+main,
 .main {
   position: relative;
   max-width: 100%;
