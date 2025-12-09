@@ -17,7 +17,7 @@
   --yellow: #fdd935;
   --yellow-1: #e9bd43;
   --yellow-2: #f5b935;
-  --yellow-hov: #be8408;
+  --yellow-hov: #9e6d03;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
   --duration: 60s;
@@ -1548,7 +1548,6 @@ img#dirtyLaundry {
 
 /* ------------ Reviews */
 .reviews {
-  display: grid;
   place-items: center;
 }
 
@@ -1629,10 +1628,6 @@ h4 {
 Reviews
 ===============
 */
-section#reviews {
-  display: grid;
-  place-items: center;
-}
 
 .title {
   text-align: center;
@@ -1744,12 +1739,6 @@ section#reviews {
 .random-btn:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
-}
-
-#reviews {
-  display: grid;
-  place-items: center;
-  margin-top: -50px;
 }
 
 .title {
@@ -1900,6 +1889,8 @@ p.price-details {
 
 .price-tier-card {
   background-color: var(--yellow-1);
+  max-width: 250px;
+  height: 220px;
 }
 
 section#prices {
@@ -1953,6 +1944,8 @@ h3.info-item {
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
+
+
 
 @media (min-width: 820px) {
 
@@ -2771,6 +2764,62 @@ q {
   color: var(--light);
 }
 
+.typewriter-text {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  background-color: var(--yellow-hov);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba((8, 8, 8, 0.5)) 0px 3px 3px;
+
+  font-size: 1.75rem;
+  margin: 30px auto;
+  letter-spacing: 1.25px;
+}
+
+.text-engrave {
+    font-family: "Just Another Hand", cursive;
+     font-weight: 400;
+      background-color: var(--dark);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.15rem;
+    letter-spacing: 1.146px;
+    text-transform: uppercase;
+}
+
+.typewriter-container {
+  /* Optional: Center the content */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 10vh; /* Example: full viewport height */
+}
+
+.typewriter-text {
+  overflow: hidden; /* Ensures text is hidden until typed */
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0 auto; /* Centers the text horizontally */
+  animation: 
+    typing 3.5s steps(40, end), /* Typing animation */
+    blink-caret .75s step-end infinite; /* Blinking cursor animation */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; } /* Cursor color at half animation */
+}
 /* ---------------- Header ---------------- */
 .logo-wrapper {
     /* margin-right: 20px; */
@@ -3723,9 +3772,8 @@ p.price-details {
 /* ----------------- Contact */
 
 section#prices {
-    min-height: 50vh;
     max-width: 100%;
-    overflow: hidden;
+    height: auto;
 }
 
 
@@ -3986,3 +4034,25 @@ details{
 #navPhone {
   transition: opacity 0.3s, visibility 0.3s;
 }
+
+/* Pause Button */
+.pause-btn {
+  color: var(--navy);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.pause-btn:hover {
+  color: var(--dark-transparent);
+}
+
+
+@media (min-width: 600px) {
+  .price-tier-card {
+    max-width: 100%;
+    height: auto};
+  }

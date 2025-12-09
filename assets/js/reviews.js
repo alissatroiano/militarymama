@@ -2,7 +2,7 @@
 const reviews = [
   {
     id: 1,
-    customer: "Ayleen Z.",
+    customer: "- Ayleen Z.",
     service: "Clothes Smell So Good!",
     img:
       "assets/images/detergent-icon.png",
@@ -11,7 +11,7 @@ const reviews = [
   },
    {
     id: 2,
-    customer: "Devyn W.",
+    customer: "- Devyn W.",
     service: "Spotless & Tidy Folding",
     img:
       "assets/images/folded-clothes.png",
@@ -20,7 +20,7 @@ const reviews = [
   },
   {
     id: 3,
-    customer: "Louise C.",
+    customer: "- Louise C.",
     service: "Above & Beyond",
     img:
       "assets/images/pickupdelivery.png",
@@ -29,7 +29,7 @@ const reviews = [
   },
   {
     id: 4,
-    customer: "Jose A.",
+    customer: "- Jose A.",
     service: "Helps my Busy Life!",
     img:
       "assets/images/clock.png",
@@ -84,13 +84,30 @@ prevBtn.addEventListener('click', function() {
 });
 
 // auto-rotate reviews every 5 seconds
-setInterval(() => {
-  currentItem++;
-  if (currentItem > reviews.length - 1) {
-    currentItem = 0;
+let isPaused = false;
+let autoRotate = setInterval(() => {
+  if (!isPaused) {
+    currentItem++;
+    if (currentItem > reviews.length - 1) {
+      currentItem = 0;
+    }
+    showPerson(currentItem);
   }
-  showPerson(currentItem);
 }, 5000);
+
+// pause/play button
+const pauseBtn = document.getElementById('pauseBtn');
+pauseBtn.addEventListener('click', function() {
+  isPaused = !isPaused;
+  const icon = pauseBtn.querySelector('i');
+  if (isPaused) {
+    icon.classList.remove('fa-pause');
+    icon.classList.add('fa-play');
+  } else {
+    icon.classList.remove('fa-play');
+    icon.classList.add('fa-pause');
+  }
+});
 
 //show random person
 
