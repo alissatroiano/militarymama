@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
   --primary-color: #46bfe4;
-  --blue-hov: #1794ba;
+  --blue-hov: #03779b;
   --calm: rgb(123, 176, 245);
   --navy: #0b0224;
   --accent-color: #1ceaed;
@@ -22,10 +22,10 @@
   --yellow-hov: #9e6d03;
   --sea-green: #3CB371;
   --light-green: #90EE90;
-  --spot-green: #1DB954;
+  --spot-green: #088032;
   --droid-green: #32de84;
   --soft-pink: #e89eb8;
-  --candy: #e89eb8;
+  --candy: #cf1758;
   --mint: #9ee8ce;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
@@ -43,6 +43,9 @@ a {
   background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
 }
 
+.text-blue {
+  color: var(--blue-hov);
+}
 
 .text-blue-1 {
   color: var(--accent-color);
@@ -133,16 +136,18 @@ p.text-tight.text-light.mx-3 {
   font-size: 1rem;
 }
 
-span.oh-no {
+.oh-no {
   font-weight: 800;
-  color: var(--yellow-2);
+  color: var(--dark);
   text-transform: lowercase;
+  font-size: 1.2rem;
 }
 
 span.oh-wow {
   font-weight: 800;
-  color: var(--primary-color);
+  color: var(--spot-green);
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .text-main {
@@ -166,7 +171,11 @@ span.oh-wow {
 }
 
 .text-green {
-  color: var(--droid-green)
+  color: var(--spot-green)
+}
+
+.text-gray {
+  color: var(--dark-grey);
 }
 
 .text-italic {
@@ -768,17 +777,22 @@ img#dirtyLaundry {
   width: 80px;
 }
 
-/* ------------ Reviews */
-.reviews {
-  display: grid;
-  place-items: center;
+/* ---------- About */
+.about-title {
+  text-transform: uppercase;
 }
 
+.about-text {
+  margin-top: -70px;
+}
+
+/* ------------ Reviews */
 q {
   font-style: italic;
   padding-bottom: 10px;
   font-size: 1rem;
 }
+
 p#service {
   font-size: 1.2rem;
 }
@@ -789,12 +803,6 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
-
-section#reviews {
-  display: grid;
-  place-items: center;
-}
 
 .title {
   text-align: center;
@@ -814,7 +822,6 @@ section#reviews {
 }
 
 .review {
-  padding: 1.5rem 2rem;
   transition: var(--transition);
   text-align: center;
 }
@@ -906,12 +913,6 @@ section#reviews {
 .random-btn:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
-}
-
-#reviews {
-  display: grid;
-  place-items: center;
-  margin-top: -50px;
 }
 
 .title {
