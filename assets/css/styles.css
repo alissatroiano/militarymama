@@ -12,7 +12,7 @@
   --dark: #2c2c2c;
   --grey: #cfcfcf;
   --light-grey: #eeecec;
-  --dark-grey: #4d4d4d;
+  --dark-grey: #878686;
   --darker: #080808;
   --dark-transparent: #090432dd;
   --black: #000000;
@@ -116,7 +116,7 @@ a.text-btn,
 .text-btn {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -135,16 +135,16 @@ p.text-tight.text-light.mx-3 {
 
 .oh-no {
   font-weight: 800;
-  color: var(--yellow-2);
+  color: var(--dark-grey);
   text-transform: lowercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .oh-wow {
   font-weight: 800;
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0 auto;
 }
 
@@ -461,7 +461,7 @@ h3#hero-start {
 }
 
 .hero-btns {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 @keyframes scroll {
@@ -773,8 +773,13 @@ img#dirtyLaundry {
 
 /* --------------- About */
 .about-text {
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: -.251px;
+}
+
+.lead-text {
+  line-height: normal;
+  padding-bottom: 2.5px;
 }
 
 p.text-hand.text-calm.catchline.aos-init.aos-animate {
@@ -1618,65 +1623,6 @@ q {
   box-sizing: border-box;
 }
 
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
-}
-
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-}
-/*  global classes */
-
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
-
-
-/*
-=============== 
-Reviews
-===============
-*/
-
 .title {
   text-align: center;
   margin-bottom: 4rem;
@@ -1994,41 +1940,6 @@ h3.info-item {
 }
 
 
-
-@media (min-width: 820px) {
-
- .slider-container {
-  width: 100%;
-  height: 200px; /* Adjust as needed */
-  overflow: hidden;
-  position: relative;
-  margin-top: -300px;
-  text-align: center;
-  margin-left: -30px;
-}
-.main {
-  position: relative;
-  max-width: 100%;
-  min-height: 50vh;
-  overflow: hidden;
-  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
-}
-.row.d-flex.justify-content-center.align-items-center.mt-3 {
-    padding-bottom: 40px;
-}
-h3#hero-start {
-    font-size: 2.5rem;
-    text-align: center;
-}
-.contact-item {
-  font-size: 1.351rem;
-  text-align: center;
-}
-
-h3#hero-start {
-  margin: 30px auto;
-}
-}
 
 .product{
   position: absolute;
@@ -4037,14 +3948,12 @@ h3.info-item {
   margin-left: -30px;
 }
 
-main,
-.main {
-  position: relative;
+main {
   max-width: 100%;
-  min-height: 50vh;
   overflow: hidden;
   background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
 }
+
 .row.d-flex.justify-content-center.align-items-center.mt-3 {
     padding-bottom: 40px;
 }
@@ -4055,9 +3964,6 @@ h3#hero-start {
 .contact-item {
   font-size: 1.351rem;
   text-align: center;
-}
-.lead-text {
-  margin: 50px auto;
 }
 h3#hero-start {
   margin: 30px auto;
@@ -4121,7 +4027,73 @@ details{
 
 
 @media (min-width: 600px) {
+  .main,
+  #home {
+  position: relative;
+  max-width: 100%;
+  min-height: 30vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
+  }
   .price-tier-card {
     max-width: 100%;
     height: auto};
   }
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  #home {
+  position: relative;
+  max-width: 100%;
+  min-height: 30vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+@media (min-width: 820px) {
+
+ .slider-container {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  overflow: hidden;
+  position: relative;
+  margin-top: -300px;
+  text-align: center;
+  margin-left: -30px;
+}
+.row.d-flex.justify-content-center.align-items-center.mt-3 {
+    padding-bottom: 40px;
+}
+h3#hero-start {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.contact-item {
+  font-size: 1.351rem;
+  text-align: center;
+}
+
+h3#hero-start {
+  margin: 30px auto;
+}
+}
