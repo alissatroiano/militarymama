@@ -43,6 +43,11 @@ a {
   background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
 }
 
+
+.text-blue-1 {
+  color: var(--accent-color);
+}
+
 .bg-head {
   background-color: #030423;
 }
@@ -2819,9 +2824,19 @@ q {
 .text-hand {
     font-family: "Just Another Hand", cursive;
      font-weight: 500;
-    text-transform: uppercase;
     font-size: 1.2rem;
     letter-spacing: 1px;
+}
+
+.text-amaranth {
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.text-happy {
+  color: var(--yellow);
 }
 
 #leadText {
