@@ -2832,6 +2832,7 @@ q {
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 1.1rem;
+  color: var(--amaranth);
 }
 
 .text-happy {
