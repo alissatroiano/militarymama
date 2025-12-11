@@ -2550,7 +2550,7 @@ q {
   border-right: 2px solid var(--yellow-hov); /* Cursor */
     margin-bottom: 20px; 
   animation: 
-    typing 8s steps(80, end) infinite, /* Typing animation */
+    typing 6s steps(50, end) infinite, /* Typing animation */
     blink-caret .75s step-end infinite; /* Blinking cursor */
 }
 
