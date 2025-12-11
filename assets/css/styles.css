@@ -190,6 +190,45 @@ p.text-tight.text-light.mx-3 {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
 }
 
+
+.text-hand {
+    font-family: "Just Another Hand", cursive;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.text-amaranth {
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--amaranth);
+}
+
+.text-happy {
+  color: var(--yellow);
+}
+
+#leadText {
+  display: inline-block; /* Allows content to be wider than the container */
+  animation: scroll 25s linear infinite; 
+
+}
+
+.text-engrave {
+    font-family: "Just Another Hand", cursive;
+     font-weight: 400;
+      background-color: var(--dark);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.15rem;
+    letter-spacing: 1.146px;
+    text-transform: uppercase;
+}
+
 .text-yellow {
   color: var(--yellow-1);
 }
@@ -294,172 +333,11 @@ a.nav-link:hover {
   color: var(--yellow-hov);
 }
 
-/* ---------- Hamburger */
-label {
-  display: block;
-}
-
-label .menu {
-  position: absolute;
-  left: -100px;
-  top: -100px;
-  z-index: 1050;
-  width: 200px;
-  height: 200px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-label .hamburger {
-  position: absolute;
-  top: 135px;
-  right: 50px;
-  width: 30px;
-  height: 2px;
-  background: var(--yellow-2);
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
-}
-
-label .hamburger:after,
-label .hamburger:before {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: var(--yellow-2);
-  border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
-}
-
-label .hamburger:before {
-  top: -10px;
-}
-
-label .hamburger:after {
-  bottom: -10px;
-}
-
-label input {
-  display: none;
-}
-
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw rgba(250, 250, 250),
-    0 0 0 100vh rgba(250, 250, 250, 0.79);
-  background-color: #fafafa;
-  opacity: 0.965;
-  border-radius: 0;
-  min-height: 100vh;
-}
-
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-}
-
-label input:checked + .menu + ul {
-  opacity: 1;
-}
-
-label ul {
-  z-index: 1060;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: 0.25s 0s ease-in-out;
-  transition: 0.25s 0s ease-in-out;
-  align-self: center;
-  vertical-align: center;
-}
-
-label a {
-  margin-bottom: 1em;
-  display: block;
-  color: #0a0a0a;
-  text-decoration: none;
-  text-align: center;
-}
-
-label a:hover {
-  color: #fafafa;
-  box-shadow: inset 100px 0 100px 0 #101c2068;
-  text-align: center;
-}
-
 .main-nav {
   list-style: none;
 }
 
-ul.hamburger-nav {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
-  list-style: none;
-  margin-top: 200px;
-  line-height: 3em;
-  color: var(--yellow-2);
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-ul.hamburger-nav:hover {
-  color: rgb(26, 201, 201);
-}
-/* -----------./hamburger */
-
 /* ---------------- Hero */
-.banner {
-  /* Restricts the visible area of the sliding text */
-  max-width: 100%;
-  position: absolute;
-  width: fit-content;
-  height: auto;
-  overflow: hidden; 
-  white-space: nowrap; /* Keeps text on a single line */
-  background-color: none; 
-  padding: 10px 0; 
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
-}
-
-.marquee-content {
-  display: inline-block; /* Allows content to be wider than the container */
-  animation: scroll 25s linear infinite; 
-  padding-right: 2em; 
-  color: var(--accent-color);
-}
-
-.text-item {
-  font-size: 1.2em; 
-  /* Add some space between the duplicated items */
-  margin: 0px 50px; 
-}
-
 h3#hero-start {
     font-size: 1.5rem;
 }
@@ -475,44 +353,6 @@ h3#hero-start {
   100% {
     transform: translateX(-100%); /* End left */
   }
-}
-
-
- .slider-container {
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.text-slides {
-  list-style: horizontal;
-  display: flex; /* For horizontal sliding */
-  transition: transform 0.5s ease-in-out; /* Smooth transition */
-  font-family: var(--primary-font);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-slides li {
-  min-width: 100%; /* Each slide takes full width */
-  height: auto;
-  width: 100vw;
-  text-align: center;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: var(--primary-font);
-  margin: 0 auto;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-icon {
@@ -536,35 +376,6 @@ img#logoImg {
   height: auto;
 }
 
-/* Base bubble style */
-.bubble {
-  position: absolute;
-  bottom: -80px;
-  border-radius: 50%;
-  opacity: 0.2;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(255, 255, 255, 0.975),
-    rgba(255, 255, 255, 0.1) 60%,
-    rgba(255, 255, 255, 0) 90%
-  );
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
-    inset 0 5px 15px rgba(255, 255, 255, 0.5);
-  mix-blend-mode: screen;
-
-  animation: rise 12s infinite ease-in;
-  animation-delay: -12s !important;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  border-radius: 50px;
-  background: rgb(255, 255, 255);
-  position: absolute;
-  top: 20%;
-  right: 20%;
-}
 
 /* Generate 30 variations manually (SCSS loop equivalent) */
 .bubble-1 {
@@ -760,21 +571,6 @@ img#logoImg {
   }
 }
 
-.credits {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.credits a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-img#dirtyLaundry {
-  width: 80px;
-}
-
 /* --------------- About */
 .about-text {
   font-size: 1rem;
@@ -786,7 +582,7 @@ img#dirtyLaundry {
   padding-bottom: 2.5px;
 }
 
-p.text-hand.text-calm.catchline.aos-init.aos-animate {
+p.text-hand.text-main {
   font-size: 1.2rem;
 }
 
@@ -2739,60 +2535,23 @@ q {
   letter-spacing: 1.25px;
 }
 
-.text-hand {
-    font-family: "Just Another Hand", cursive;
-    font-weight: 500;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-}
-
-.text-amaranth {
-  text-transform: lowercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: var(--amaranth);
-}
-
-.text-happy {
-  color: var(--yellow);
-}
-
-#leadText {
-  display: inline-block; /* Allows content to be wider than the container */
-  animation: scroll 25s linear infinite; 
-
-}
-
-.text-engrave {
-    font-family: "Just Another Hand", cursive;
-     font-weight: 400;
-      background-color: var(--dark);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 1.15rem;
-    letter-spacing: 1.146px;
-    text-transform: uppercase;
-}
-
 .typewriter-container {
   /* Optional: Center the content */
   display: flex;
   justify-content: start;
   align-items: start;
-  margin-bottom: 20px; /* Example: full viewport height */
+/* Example: full viewport height */
 }
 
 .typewriter-text {
   overflow: hidden; /* Ensures text is hidden until typed */
   white-space: nowrap; /* Prevents text from wrapping */
   margin: 0 auto; /* Centers the text horizontally */
+  border-right: 2px solid var(--yellow-hov); /* Cursor */
+    margin-bottom: 20px; 
   animation: 
-    typing 4s steps(50, end) infinite, /* Typing animation */
-    blink-caret .75s step-end infinite;Z
-
+    typing 8s steps(80, end) infinite, /* Typing animation */
+    blink-caret .75s step-end infinite; /* Blinking cursor */
 }
 
 /* Keyframes for the typing animation */
@@ -2803,8 +2562,8 @@ q {
 
 /* Keyframes for the blinking cursor animation */
 @keyframes blink-caret {
-  from, to { border-color: var(--navy) }
-  50% { border-color: rgb(0, 0, 44); } /* Cursor color at half animation */
+  from, to { border-color: var(--yellow-hov) }
+  50% { border-color: transparent; } /* Make cursor invisible at halfway point */
 }
 
 /* ---------------- Header ---------------- */
