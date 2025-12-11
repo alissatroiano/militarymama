@@ -93,7 +93,7 @@ let autoRotate = setInterval(() => {
     }
     showPerson(currentItem);
   }
-}, 8000);
+}, 6000);
 
 // pause/play button
 const pauseBtn = document.getElementById('pauseBtn');
