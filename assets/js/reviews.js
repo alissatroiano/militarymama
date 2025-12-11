@@ -3,7 +3,7 @@ const reviews = [
   {
     id: 1,
     customer: "- Ayleen Z.",
-    service: "Clothes Smell So Good!",
+    service: "Clothes Smell Amazing!",
     img:
       "assets/images/detergent-icon.png",
     review:
@@ -12,7 +12,7 @@ const reviews = [
    {
     id: 2,
     customer: "- Devyn W.",
-    service: "Spotless & Tidy Folding",
+    service: "Spotless, Carefully Folded Clothes",
     img:
       "assets/images/folded-clothes.png",
     review:
@@ -21,7 +21,7 @@ const reviews = [
   {
     id: 3,
     customer: "- Louise C.",
-    service: "Above & Beyond",
+    service: "She Goes Above & Beyond",
     img:
       "assets/images/pickupdelivery.png",
     review:
@@ -30,7 +30,7 @@ const reviews = [
   {
     id: 4,
     customer: "- Jose A.",
-    service: "Helps my Busy Life!",
+    service: "Same and Next Day Service Save My Life!",
     img:
       "assets/images/clock.png",
     review:
@@ -93,7 +93,7 @@ let autoRotate = setInterval(() => {
     }
     showPerson(currentItem);
   }
-}, 5000);
+}, 8000);
 
 // pause/play button
 const pauseBtn = document.getElementById('pauseBtn');
