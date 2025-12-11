@@ -43,7 +43,6 @@ a {
   background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
 }
 
-
 .text-blue-1 {
   color: var(--accent-color);
 }
@@ -65,10 +64,6 @@ a {
   background-color: #fec852;
 }
 
-.bg-yellow {
-  background-color: var(--yellow-2);
-}
-
 .bg-trans {
   background-color: var(--dark-transparent);
 }
@@ -84,10 +79,6 @@ button {
 
 .btn-yellow:hover {
   background-color: var(--yellow);
-}
-
-.bg-trans {
-  background-color: var(--primary-transparent);
 }
 
 .main-font {
@@ -128,7 +119,6 @@ a.text-btn,
   background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
 }
 
-
 p.text-tight.text-light.mx-3 {
   font-size: 1rem;
 }
@@ -154,10 +144,6 @@ p.text-tight.text-light.mx-3 {
 
 .text-navy {
   color: var(--navy);
-}
-
-.text-amaranth {
-  color: var(--amaranth);
 }
 
 .text-calm {
@@ -190,7 +176,6 @@ p.text-tight.text-light.mx-3 {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
 }
 
-
 .text-hand {
     font-family: "Just Another Hand", cursive;
     font-weight: 500;
@@ -210,12 +195,6 @@ p.text-tight.text-light.mx-3 {
   color: var(--yellow);
 }
 
-#leadText {
-  display: inline-block; /* Allows content to be wider than the container */
-  animation: scroll 25s linear infinite; 
-
-}
-
 .text-engrave {
     font-family: "Just Another Hand", cursive;
      font-weight: 400;
@@ -233,26 +212,16 @@ p.text-tight.text-light.mx-3 {
   color: var(--yellow-1);
 }
 
-.text-lgreen {
-  color: var(--light-green);
-}
-
-.text-spot {
-  color: var(--spot-green);
-}
-
 .text-accent {
   color: var(--accent-color);
 }
 
 /* ---------------- Header ---------------- */
 .logo-wrapper {
-    /* margin-right: 20px; */
     z-index: 100000;
     position: absolute;
     max-width: 125px;
     right: 0;
-    /* top: 0; */
     margin-top: 20px;
     margin-right: 10px;
 }
