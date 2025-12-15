@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 /* Global Styles */
 :root {
   --primary-color: #46bfe4;
@@ -779,21 +781,7 @@ section#reviews {
 .next-btn:hover {
   color: var(--dark-transparent);
 }
-.random-btn {
-  margin-top: 0.5rem;
-  background: var(--yellow-hov);
-  color: var(--navy);
-  padding: 0.25rem 0.5rem;
-  text-transform: capitalize;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  border-color: var(--navy);
-  cursor: pointer;
-}
-.random-btn:hover {
-  background: var(--navy);
-  color: var(--light);
-}
+
 
 /* ---------------- Header ---------------- */
 .logo-wrapper {
@@ -882,142 +870,6 @@ a.nav-link:hover {
   color: var(--yellow-hov);
 }
 
-/* ---------- Hamburger */
-label {
-  display: block;
-}
-
-label .menu {
-  position: absolute;
-  left: -100px;
-  top: -100px;
-  z-index: 1050;
-  width: 200px;
-  height: 200px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-label .hamburger {
-  position: absolute;
-  top: 135px;
-  right: 50px;
-  width: 30px;
-  height: 2px;
-  background: var(--yellow-2);
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-label .hamburger:after,
-label .hamburger:before {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: var(--yellow-2);
-  border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-label .hamburger:before {
-  top: -10px;
-}
-
-label .hamburger:after {
-  bottom: -10px;
-}
-
-label input {
-  display: none;
-}
-
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw rgba(250, 250, 250),
-    0 0 0 100vh rgba(250, 250, 250, 0.79);
-  background-color: #fafafa;
-  opacity: 0.965;
-  border-radius: 0;
-  min-height: 100vh;
-}
-
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-}
-
-label input:checked + .menu + ul {
-  opacity: 1;
-}
-
-label ul {
-  z-index: 1060;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: 0.25s 0s ease-in-out;
-  transition: 0.25s 0s ease-in-out;
-  align-self: center;
-  vertical-align: center;
-}
-
-label a {
-  margin-bottom: 1em;
-  display: block;
-  color: #0a0a0a;
-  text-decoration: none;
-  text-align: center;
-}
-
-label a:hover {
-  color: #fafafa;
-  box-shadow: inset 100px 0 100px 0 #101c2068;
-  text-align: center;
-}
-
-.main-nav {
-  list-style: none;
-}
-
-ul.hamburger-nav {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
-  list-style: none;
-  margin-top: 200px;
-  color: var(--yellow-2);
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-ul.hamburger-nav:hover {
-  color: rgb(26, 201, 201);
-}
-/* -----------./hamburger */
-
 /* ---------------- Hero */
 .banner {
   /* Restricts the visible area of the sliding text */
@@ -1032,19 +884,6 @@ ul.hamburger-nav:hover {
   font-family: var(--primary-font);
   text-transform: uppercase;
   letter-spacing: 1.25px;
-}
-
-.marquee-content {
-  display: inline-block; /* Allows content to be wider than the container */
-  animation: scroll 25s linear infinite;
-  padding-right: 2em;
-  color: var(--accent-color);
-}
-
-.text-item {
-  font-size: 1.2em;
-  /* Add some space between the duplicated items */
-  margin: 0px 50px;
 }
 
 h3#hero-start {
@@ -1148,188 +987,6 @@ img#logoImg {
   right: 20%;
 }
 
-/* Generate 30 variations manually (SCSS loop equivalent) */
-.bubble-1 {
-  left: 5%;
-  width: 12px;
-  height: 12px;
-  animation-duration: 14s;
-}
-.bubble-2 {
-  left: 10%;
-  width: 18px;
-  height: 18px;
-  animation-duration: 16s;
-}
-.bubble-3 {
-  left: 15%;
-  width: 8px;
-  height: 8px;
-  animation-duration: 11s;
-}
-.bubble-4 {
-  left: 20%;
-  width: 25px;
-  height: 25px;
-  animation-duration: 20s;
-}
-.bubble-5 {
-  left: 25%;
-  width: 14px;
-  height: 14px;
-  animation-duration: 13s;
-}
-.bubble-6 {
-  left: 30%;
-  width: 30px;
-  height: 30px;
-  animation-duration: 22s;
-}
-.bubble-7 {
-  left: 35%;
-  width: 10px;
-  height: 10px;
-  animation-duration: 10s;
-}
-.bubble-8 {
-  left: 40%;
-  width: 20px;
-  height: 20px;
-  animation-duration: 15s;
-}
-.bubble-9 {
-  left: 45%;
-  width: 16px;
-  height: 16px;
-  animation-duration: 17s;
-}
-.bubble-10 {
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  animation-duration: 26s;
-}
-.bubble-11 {
-  left: 55%;
-  width: 12px;
-  height: 12px;
-  animation-duration: 12s;
-}
-.bubble-12 {
-  left: 60%;
-  width: 6px;
-  height: 6px;
-  animation-duration: 9s;
-}
-.bubble-13 {
-  left: 65%;
-  width: 28px;
-  height: 28px;
-  animation-duration: 18s;
-}
-.bubble-14 {
-  left: 70%;
-  width: 20px;
-  height: 20px;
-  animation-duration: 16s;
-}
-.bubble-15 {
-  left: 75%;
-  width: 14px;
-  height: 14px;
-  animation-duration: 12s;
-}
-.bubble-16 {
-  left: 80%;
-  width: 26px;
-  height: 26px;
-  animation-duration: 19s;
-}
-.bubble-17 {
-  left: 85%;
-  width: 34px;
-  height: 34px;
-  animation-duration: 21s;
-}
-.bubble-18 {
-  left: 90%;
-  width: 50px;
-  height: 50px;
-  animation-duration: 28s;
-}
-.bubble-19 {
-  left: 22%;
-  width: 18px;
-  height: 18px;
-  animation-duration: 15s;
-}
-.bubble-20 {
-  left: 48%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 30s;
-}
-.bubble-21 {
-  left: 12%;
-  width: 10px;
-  height: 10px;
-  animation-duration: 11s;
-}
-.bubble-22 {
-  left: 32%;
-  width: 24px;
-  height: 24px;
-  animation-duration: 17s;
-}
-.bubble-23 {
-  left: 72%;
-  width: 14px;
-  height: 14px;
-  animation-duration: 13s;
-}
-.bubble-24 {
-  left: 58%;
-  width: 20px;
-  height: 20px;
-  animation-duration: 16s;
-}
-.bubble-25 {
-  left: 27%;
-  width: 16px;
-  height: 16px;
-  animation-duration: 14s;
-}
-.bubble-26 {
-  left: 17%;
-  width: 28px;
-  height: 28px;
-  animation-duration: 19s;
-}
-.bubble-27 {
-  left: 83%;
-  width: 22px;
-  height: 22px;
-  animation-duration: 18s;
-}
-.bubble-28 {
-  left: 93%;
-  width: 18px;
-  height: 18px;
-  animation-duration: 12s;
-}
-.bubble-29 {
-  left: 51%;
-  width: 44px;
-  height: 44px;
-  animation-duration: 24s;
-}
-.bubble-30 {
-  left: 7%;
-  width: 14px;
-  height: 14px;
-  animation-duration: 13s;
-}
-
 /* Bubble animation */
 @keyframes rise {
   0% {
@@ -1340,21 +997,6 @@ img#logoImg {
     transform: translateY(-350px) scale(1.2);
     opacity: 0;
   }
-}
-
-.credits {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.credits a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-img#dirtyLaundry {
-  width: 80px;
 }
 
 /* ------------ Reviews */
@@ -1825,243 +1467,6 @@ a.nav-link:hover {
   color: var(--yellow-hov);
 }
 
-/* ---------- Hamburger */
-label {
-  display: block;
-}
-
-label .menu {
-  position: absolute;
-  left: -100px;
-  top: -100px;
-  z-index: 1050;
-  width: 200px;
-  height: 200px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-label .hamburger {
-  position: absolute;
-  top: 135px;
-  right: 50px;
-  width: 30px;
-  height: 2px;
-  background: var(--yellow-2);
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-label .hamburger:after,
-label .hamburger:before {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: var(--yellow-2);
-  border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-label .hamburger:before {
-  top: -10px;
-}
-
-label .hamburger:after {
-  bottom: -10px;
-}
-
-label input {
-  display: none;
-}
-
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw rgba(250, 250, 250),
-    0 0 0 100vh rgba(250, 250, 250, 0.79);
-  background-color: #fafafa;
-  opacity: 0.965;
-  border-radius: 0;
-  min-height: 100vh;
-}
-
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-}
-
-label input:checked + .menu + ul {
-  opacity: 1;
-}
-
-label ul {
-  z-index: 1060;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: 0.25s 0s ease-in-out;
-  transition: 0.25s 0s ease-in-out;
-  align-self: center;
-  vertical-align: center;
-}
-
-label a {
-  margin-bottom: 1em;
-  display: block;
-  color: #0a0a0a;
-  text-decoration: none;
-  text-align: center;
-}
-
-label a:hover {
-  color: #fafafa;
-  box-shadow: inset 100px 0 100px 0 #101c2068;
-  text-align: center;
-}
-
-.main-nav {
-  list-style: none;
-}
-
-ul.hamburger-nav {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
-  list-style: none;
-  margin-top: 200px;
-  line-height: 3em;
-  color: var(--yellow-2);
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-}
-
-ul.hamburger-nav:hover {
-  color: rgb(26, 201, 201);
-}
-/* -----------./hamburger */
-
-/* ---------------- Hero */
-.banner {
-  /* Restricts the visible area of the sliding text */
-  max-width: 100%;
-  position: absolute;
-  width: fit-content;
-  height: auto;
-  overflow: hidden;
-  white-space: nowrap; /* Keeps text on a single line */
-  background-color: none;
-  padding: 10px 0;
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
-}
-
-.marquee-content {
-  display: inline-block; /* Allows content to be wider than the container */
-  animation: scroll 25s linear infinite;
-  padding-right: 2em;
-  color: var(--accent-color);
-}
-
-.text-item {
-  font-size: 1.2em;
-  /* Add some space between the duplicated items */
-  margin: 0px 50px;
-}
-
-h3#hero-start {
-  font-size: 1.5rem;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%); /* Start right */
-  }
-  100% {
-    transform: translateX(-100%); /* End left */
-  }
-}
-
-.slider-container {
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.text-slides {
-  list-style: horizontal;
-  display: flex; /* For horizontal sliding */
-  transition: transform 0.5s ease-in-out; /* Smooth transition */
-  font-family: var(--primary-font);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-slides li {
-  min-width: 100%; /* Each slide takes full width */
-  height: auto;
-  width: 100vw;
-  text-align: center;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: var(--primary-font);
-  margin: 0 auto;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-icon {
-  font-size: 1.2rem;
-  margin: 5px;
-}
-
-#heroTitleText {
-  text-transform: uppercase;
-  letter-spacing: -10;
-}
-
-.img-wrapper {
-  max-width: 60%;
-  height: auto;
-  overflow: hidden;
-}
-
-img#logoImg {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Generate 30 variations manually (SCSS loop equivalent) */
 .bubble-1 {
   left: 5%;
@@ -2256,21 +1661,6 @@ img#logoImg {
   }
 }
 
-.credits {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.credits a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-img#dirtyLaundry {
-  width: 80px;
-}
-
 /* ------------ Reviews */
 .reviews {
   display: grid;
@@ -2323,119 +1713,6 @@ q {
 #info {
   margin-bottom: 0.75rem;
 }
-.prev-btn,
-.next-btn {
-  color: var(--navy);
-  font-size: 1.25rem;
-  background: transparent;
-  border-color: transparent;
-  margin: 0 0.5rem;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.prev-btn:hover,
-.next-btn:hover {
-  color: var(--clr-primary-5);
-}
-.random-btn {
-  margin-top: 0.5rem;
-  background: var(--clr-primary-10);
-  color: var(--clr-primary-5);
-  padding: 0.25rem 0.5rem;
-  text-transform: capitalize;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  border-color: var(--clr-primary-5);
-  cursor: pointer;
-}
-.random-btn:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
-}
-
-#reviews {
-  display: grid;
-  place-items: center;
-  margin-top: -50px;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.underline {
-  height: 0.25rem;
-  width: 5rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.review-wrapper {
-  width: 80vw;
-  max-width: var(--fixed-width);
-}
-
-.review {
-  padding: 1.5rem 2rem;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  text-align: center;
-}
-
-.img-container {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-}
-#person-img {
-  width: 100%;
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  position: relative;
-}
-
-.img-container::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f10e";
-  position: absolute;
-  left: 0;
-  width: 2.3rem;
-  height: 2.21rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  margin-left: -12px;
-  margin-top: -35px;
-  opacity: 0.89754;
-  transform: translateY(25%);
-  color: var(--light);
-}
-.img-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: none;
-  position: absolute;
-  top: -0.25rem;
-  right: -0.5rem;
-  border-radius: 50%;
-}
-#author {
-  margin-bottom: 0.25rem;
-}
-#job {
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  color: var(--clr-primary-5);
-  font-size: 0.85rem;
-}
 
 .prev-btn,
 .next-btn {
@@ -2452,21 +1729,6 @@ q {
 .next-btn:hover {
   color: var(--dark-transparent);
 }
-.random-btn {
-  margin-top: 0.5rem;
-  background: var(--yellow-hov);
-  color: var(--navy);
-  padding: 0.25rem 0.5rem;
-  text-transform: capitalize;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  border-color: var(--navy);
-  cursor: pointer;
-}
-.random-btn:hover {
-  background: var(--navy);
-  color: var(--light);
-}
 
 .typewriter-text {
   font-family: "Just Another Hand", cursive;
@@ -2475,9 +1737,16 @@ q {
   background-clip: text;
   color: transparent;
   text-shadow: rgba((8, 8, 8, 0.5)) 0px 3px 3px;
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   margin: 10px auto;
   letter-spacing: 1.25px;
+  overflow: hidden; /* Ensures text is hidden until typed */
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0 auto; /* Centers the text horizontally */
+  border-right: 2px solid var(--yellow-hov); /* Cursor */
+  margin-bottom: 20px;
+  animation: typing 6s steps(50, end) infinite,
+  blink-caret 0.75s step-end infinite; 
 }
 
 .typewriter-container {
@@ -2488,15 +1757,6 @@ q {
   /* Example: full viewport height */
 }
 
-.typewriter-text {
-  overflow: hidden; /* Ensures text is hidden until typed */
-  white-space: nowrap; /* Prevents text from wrapping */
-  margin: 0 auto; /* Centers the text horizontally */
-  border-right: 2px solid var(--yellow-hov); /* Cursor */
-  margin-bottom: 20px;
-  animation: typing 6s steps(50, end) infinite,
-    /* Typing animation */ blink-caret 0.75s step-end infinite; /* Blinking cursor */
-}
 
 /* Keyframes for the typing animation */
 @keyframes typing {
@@ -2559,10 +1819,6 @@ a.top-nav {
 a.top-nav:hover {
   color: var(--accent-color);
   font-size: 1.3rem;
-}
-
-i.fas.fa-bars.fa-2xl.text-info {
-  /* position: absolute; */
 }
 
 a.navbar-brand.condensed-font {
@@ -2897,151 +2153,6 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 0.875rem;
-}
-
-
-/*
-=============== 
-Reviews
-===============
-*/
-section#reviews {
-  display: grid;
-  place-items: center;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.underline {
-  height: 0.25rem;
-  width: 5rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
-}
-.review-wrapper {
-  width: 80vw;
-  max-width: var(--fixed-width);
-}
-
-.review {
-  padding: 1.5rem 2rem;
-  transition: var(--transition);
-  text-align: center;
-}
-
-.img-container {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  background-color: var(--dark-transparent);
-  border-radius: 50%;
-  margin: 0px auto;
-}
-
-#person-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 50%;
-  position: relative;
-}
-
-.img-container::after {
-  content: "\f10e";
-  position: fixed;
-  left: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  transform: translateY(25%);
-  background: var(--navy);
-  color: var(--clr-white);
-}
-
-.img-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  bottom: 6rem;
-  right: -0.5rem;
-  border-radius: 50%;
-}
-
-#customer {
-  margin-bottom: 0.25rem;
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-#job {
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  color: var(--clr-primary-5);
-  font-size: 0.85rem;
-}
-#info {
-  margin-bottom: 0.75rem;
-}
-.prev-btn,
-.next-btn {
-  color: var(--navy);
-  font-size: 1.25rem;
-  background: transparent;
-  border-color: transparent;
-  margin: 0 0.5rem;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.prev-btn:hover,
-.next-btn:hover {
-  color: var(--clr-primary-5);
-}
-.random-btn {
-  margin-top: 0.5rem;
-  background: var(--clr-primary-10);
-  color: var(--clr-primary-5);
-  padding: 0.25rem 0.5rem;
-  text-transform: capitalize;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  border-color: var(--clr-primary-5);
-  cursor: pointer;
-}
-.random-btn:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
-}
-
 #reviews {
   display: grid;
   place-items: center;
@@ -3141,21 +2252,6 @@ section#reviews {
 .next-btn:hover {
   color: var(--dark-transparent);
 }
-.random-btn {
-  margin-top: 0.5rem;
-  background: var(--yellow-hov);
-  color: var(--navy);
-  padding: 0.25rem 0.5rem;
-  text-transform: capitalize;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  border-color: var(--navy);
-  cursor: pointer;
-}
-.random-btn:hover {
-  background: var(--navy);
-  color: var(--light);
-}
 
 /* ------------------ Pricing */
 h3.plan,
@@ -3207,151 +2303,6 @@ p.price-details {
   transition-duration: 0.3s;
 }
 
-/* ----------------- Contact */
-
-section#prices {
-  max-width: 100%;
-  height: auto;
-}
-
-#contact {
-  max-width: 100%;
-  height: auto;
-  background: url("../images/soap-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-p.hours,
-a.email-add,
-.service-areas,
-a.phone-number,
-.contact-item > p {
-  font-size: 1rem;
-}
-
-img.bubbles-left {
-  max-width: 100%;
-  height: 350px;
-  align-items: end;
-  justify-content: end;
-}
-
-h3.info-item {
-  font-size: 1.351rem;
-}
-
-.info-item > h3 > i {
-  margin: 0px 5px;
-}
-
-.card.contact-card {
-  background-color: #fafafa30;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-}
-
-h3.plan,
-p.price-details,
-.details {
-  position: absolute;
-  z-index: 4;
-}
-
-h3.plan {
-  top: 5%;
-  left: 4%;
-}
-
-p.price-details {
-  bottom: 0;
-  right: 5%;
-  font-size: 1.2em;
-}
-
-.price-card:hover {
-  z-index: 4;
-}
-
-.price-card:hover .details {
-  transform: rotate(14.03624deg) translate(0%, 10%) scale(1.2);
-}
-
-h3.price-tier {
-  text-transform: uppercase;
-}
-
-.details {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  border-radius: 2vw;
-  -webkit-filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.4));
-  filter: drop-shadow(2px 6px 3px rgba(0, 0, 0, 0.4));
-  transform: rotate(0deg) translate(0, 0);
-  transition-property: transform;
-  transition-duration: 0.3s;
-}
-
-.price-card {
-  transform-origin: center;
-  transform: skewY(-4.398705355deg) rotatez(-14.03624deg);
-  padding-top: 50%;
-  padding-bottom: 20%;
-  z-index: 1;
-  transition-property: z-index;
-  transition-duration: 0.3s;
-  width: 80%;
-  max-width: 80%;
-  border-radius: 20%;
-  height: auto;
-  margin-bottom: 40px;
-}
-
-/* ----------------- Contact */
-#contact {
-  max-width: 100%;
-  height: auto;
-  background: url("../images/soap-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-p.hours,
-a.email-add,
-.service-areas,
-a.phone-number,
-.contact-item > p {
-  font-size: 1rem;
-}
-
-img.bubbles-left {
-  max-width: 100%;
-  height: 350px;
-  align-items: end;
-  justify-content: end;
-}
-
-h3.info-item {
-  font-size: 1.351rem;
-}
-
-.info-item > h3 > i {
-  margin: 0px 5px;
-}
-
-.card.contact-card {
-  background-color: #fafafa30;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-}
 
 /* ----------------- Contact */
 #contact {
@@ -3399,9 +2350,9 @@ h3.info-item {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--yellow-2);
+  width: 45px;
+  height: 45px;
+  background-color: var(--yellow);
   color: var(--dark);
   border: none;
   border-radius: 50%;
@@ -3521,12 +2472,6 @@ h3.info-item {
     position: absolute;
     z-index: 2;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
   }
 }
 

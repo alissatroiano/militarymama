@@ -1,0 +1,39 @@
+/* Font optimization to reduce layout shifts */
+@font-face {
+  font-family: 'Sofia Sans Extra Condensed';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Just Another Hand';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  font-display: swap;
+}
+
+/* Performance optimizations */
+.bubble {
+  will-change: transform, opacity;
+}
+
+.main {
+  contain: layout style paint;
+}
+
+.reviews {
+  contain: layout;
+}
+
+/* Reduce paint complexity */
+.img-container::after,
+.img-container::before {
+  will-change: transform;
+}

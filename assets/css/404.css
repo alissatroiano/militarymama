@@ -1,0 +1,642 @@
+/* Global Styles */
+:root {
+  --primary-color: #46bfe4;
+  --blue-hov: #1794ba;
+  --calm: rgb(123, 176, 245);
+  --navy: #0b0224;
+  --accent-color: #1ceaed;
+  --amaranth: #e52b50;
+  --primary-transparent: rgba(34, 7, 88, 0.481);
+  --light: #fafafa;
+  --lighter: #f5f5f5;
+  --dark: #2c2c2c;
+  --grey: #cfcfcf;
+  --light-grey: #eeecec;
+  --dark-grey: #393939;
+  --darker: #080808;
+  --dark-transparent: #090432dd;
+  --black: #000000;
+  --yellow: #fdd935;
+  --yellow-1: #e9bd43;
+  --yellow-2: #f5b935;
+  --yellow-hov: #9e6d03;
+  --sea-green: #3cb371;
+  --light-green: #90ee90;
+  --spot-green: #1db954;
+  --droid-green: #32de84;
+  --soft-pink: #e89eb8;
+  --candy: #e89eb8;
+  --mint: #9ee8ce;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+  --primary-font: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-main {
+  background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
+}
+
+.text-blue-1 {
+  color: var(--accent-color);
+}
+
+.bg-head {
+  background-color: #030423;
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.bg-trans {
+  background-color: transparent;
+  background: none;
+}
+
+.bg-yellow-light {
+  background-color: #fec852;
+}
+
+.bg-trans {
+  background-color: var(--dark-transparent);
+}
+
+button {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.btn-yellow,
+.bg-yellow {
+  background-color: var(--yellow-2);
+}
+
+.btn-yellow:hover {
+  background-color: var(--yellow);
+}
+
+.condensed-font {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+a.btn-outline-yellow,
+.btn-outline-yellow {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  border-color: var(--yellow-2);
+  font-size: 1.2rem;
+  color: var(--yellow-2);
+}
+
+.btn-outline-yellow:hover {
+  background-color: var(--yellow-2);
+}
+
+a.text-btn,
+.text-btn {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+/* ---------------- Header ---------------- */
+.logo-wrapper {
+  z-index: 100000;
+  position: absolute;
+  max-width: 125px;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+button.btn.btn-main.my-2.mx-auto.bg-main {
+  position: fixed;
+  left: 20px;
+  top: 0;
+}
+
+ul.list-group-horizontal.text-center.align-items-center.my-0.mx-auto.py-5 {
+  position: fixed;
+  left: 20px;
+  background-color: #030423b8;
+  top: 60px;
+  z-index: 0;
+}
+
+i.fas.fa-bars.fa-2xl.text-yellow {
+  background-color: var(--dark-transparent);
+  border-radius: 15px;
+}
+
+a.top-nav {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a.top-nav:hover {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+}
+
+i.fas.fa-bars.fa-2xl.text-info {
+  /* position: absolute; */
+}
+
+a.navbar-brand.condensed-font {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.site-navbar-top {
+  font-size: 14px;
+}
+
+.site-navbar-wrap .site-navbar-top {
+  font-size: 0.8rem;
+}
+
+.site-navbar-wrap .site-navbar-top {
+  font-size: 0.8rem;
+}
+
+/* .site-navbar-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+} */
+
+.phone-nav {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+a.phone-nav:hover {
+  color: var(--yellow-hov);
+}
+
+a.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+li.nav-item:hover > a.nav-link:hover {
+  color: var(--blue-hov);
+}
+
+a.nav-link:hover {
+  color: var(--yellow-hov);
+}
+
+.main-nav {
+  list-style: none;
+}
+
+nav.navbar.navbar-light.bg-main {
+    z-index: 50000;
+}
+
+.main {
+  position: relative;
+  max-width: 100%;
+  min-height: 50vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
+}
+
+p.text-tight.text-light.mx-3 {
+  font-size: 1rem;
+}
+
+.oh-no {
+  font-weight: 800;
+  color: var(--dark-grey);
+  text-transform: lowercase;
+  font-size: 1.2rem;
+}
+
+.oh-wow {
+  font-weight: 800;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+.text-main {
+  color: var(--primary-color);
+}
+
+.text-navy {
+  color: var(--navy);
+}
+
+.text-calm {
+  color: var(--calm);
+}
+
+.text-candy {
+  color: var(--candy);
+}
+
+.text-gray {
+  color: var(--dark);
+}
+
+.text-green {
+  color: var(--droid-green);
+}
+
+.text-italic {
+  color: var(--dark);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.text-sans {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-tight {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.text-hand {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.text-amaranth {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--amaranth);
+}
+
+.text-happy {
+  color: var(--yellow);
+}
+
+.text-engrave {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  background-color: var(--dark);
+  background-clip: text;
+  color: transparent;
+  font-size: 1.15rem;
+  letter-spacing: 1.146px;
+  text-transform: uppercase;
+}
+
+.text-yellow {
+  color: var(--yellow-1);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+body {
+  background: linear-gradient(180deg, #000813d1, 5%, #0a012a83, 50%, #030423a5),
+  url('https://images.pexels.com/photos/32835890/pexels-photo-32835890.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  height:auto;
+  min-height:100vh;
+  overflow:hidden;
+}
+
+.text-wrap {
+    margin-top: 150px;
+}
+
+.info {
+  background: rgba(250, 250, 250, 0.675);
+  backdrop-filter: blur(1px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  border-radius: 10px;
+  max-width: 100%;
+  width: 450px;
+  min-height: 30vh;
+  margin: 50px auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  padding-top: 50px;
+  margin: 20px auto;
+}
+
+h4.text-hand {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+a,
+a#\34 04Button {
+  color: #fafafa;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+button.bg-navy {
+  background-color: rgba(41, 41, 176, 0.868);        
+  padding: 25px 15px;
+  border-radius: 50%;
+  border: none;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button.bg-navy:hover {
+    background-color: var(--primary-transparent);
+}
+
+span.error {
+  color: red;
+  text-transform: uppercase;
+}
+
+h4.text {
+  font-size: 1.5rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+#background-wrap {
+   bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 50%;
+	top: 0;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 65%;
+	top: 70%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 90%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
+
+@media (min-width: 768px) {
+    
+.info {
+  background: rgba(250, 250, 250, 0.675);
+  backdrop-filter: blur(1px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  border-radius: 10px;
+  max-width: 100%;
+  width: 450px;
+  margin: 10px auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+} 
+.home-button {
+    padding-bottom: 20px;
+    
+}
+.text-wrap {
+    margin-top: 80px;
+}
+}
