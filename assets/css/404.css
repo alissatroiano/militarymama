@@ -266,9 +266,23 @@ p.text-tight.text-light.mx-3 {
 
 .text-hand {
   font-family: "Just Another Hand", cursive;
+}
+
+h1.text-tight {
+  font-size: 4.5rem;
+}
+
+h2.text-hand {
+  font-family: "Just Another Hand", cursive;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
+  margin: 20px;
+}
+
+h3.text-hand {
+  margin: 20px 10px;
+  font-size: 2.5rem;
 }
 
 .text-amaranth {
@@ -302,19 +316,14 @@ p.text-tight.text-light.mx-3 {
 }
 
 body {
-  background: linear-gradient(180deg, #000813d1, 5%, #0a012a83, 50%, #030423a5),
-  url('https://images.pexels.com/photos/32835890/pexels-photo-32835890.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   max-width: 100%;
   height:auto;
   min-height:100vh;
-  overflow:hidden;
+  overflow: visible;
 }
 
 .text-wrap {
-    margin-top: 150px;
+    margin-top: 10px;
 }
 
 .info {
@@ -337,13 +346,12 @@ body {
 h1 {
   text-align: center;
   font-size: 6rem;
-  padding-top: 50px;
   margin: 20px auto;
 }
 
 h4.text-hand {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin: 20px 20px;
 }
 
 a,
@@ -355,11 +363,11 @@ a#\34 04Button {
 
 
 button.bg-navy {
-  background-color: rgba(41, 41, 176, 0.868);        
+  background-color: rgba(41, 41, 176, 0.868);
   padding: 25px 15px;
   border-radius: 50%;
   border: none;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -379,13 +387,26 @@ h4.text {
   padding: 20px;
 }
 
+h1.display-2.fw-bold.text-tight {
+    margin: 100px auto;
+}
+
 #background-wrap {
-   bottom: 0;
+  bottom: 0;
 	left: 0;
 	position: fixed;
 	right: 0;
 	top: 0;
-    font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  max-width: 100%;
+    background: linear-gradient(180deg, #000813d1, 5%, #0a012a83, 50%, #030423a5),
+  url('https://images.pexels.com/photos/32835890/pexels-photo-32835890.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 /* KEYFRAMES */
@@ -616,7 +637,7 @@ h4.text {
 	width: 180px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     
 .info {
   background: rgba(250, 250, 250, 0.675);
@@ -625,7 +646,7 @@ h4.text {
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
   border-radius: 10px;
   max-width: 100%;
-  width: 450px;
+  width: 650px;
   margin: 10px auto;
   text-align: center;
   align-items: center;
@@ -634,7 +655,6 @@ h4.text {
 } 
 .home-button {
     padding-bottom: 20px;
-    
 }
 .text-wrap {
     margin-top: 80px;
