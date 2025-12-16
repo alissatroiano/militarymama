@@ -114,8 +114,7 @@
             Welcome to Military Mama Laundry Services, where laundry goes from
           </p>
           <p class="text-tight" data-aos="fade-left"
-            data-aos-delay="1000"
-            data-aos-duration="3000">
+            data-aos-delay="1000">
             <span class="text-amaranth fw-bold mx-1">
             "Oh
             No…”</span>
@@ -127,8 +126,8 @@
             Fast, friendly, and freakishly convenient, we make laundry day disappear—so you can focus on everything
             else.
           </p>
-          <p class="text-hand text-main text-green" data-aos="fade-right" data-aos-delay="2000"
-            data-aos-duration="3000">Clean clothes .
+          <p class="text-hand text-main" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <span class="text-green"></span>Clean clothes .
             <span class="text-calm"> Zero stress </span>.
             <span class="text-candy">Mama’s got you. <i class="fas fa-heart"></i></span>
           </p>
@@ -302,7 +301,12 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
-    AOS.init();
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        once: true,
+        disable: 'mobile'
+      });
+    }
   </script>
    <script src="assets/js/backToTop.js"></script>
   <script src="assets/js/reviews.js"></script>

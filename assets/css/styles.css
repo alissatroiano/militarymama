@@ -2796,3 +2796,38 @@ h3.info-item {
     width: 95vw;
   }
 }
+
+/* AOS Fallback for restricted environments */
+[data-aos] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-aos="fade-in"] {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  [data-aos="fade-left"] {
+    animation: fadeInLeft 1s ease-in;
+  }
+  
+  [data-aos="fade-right"] {
+    animation: fadeInRight 1s ease-in;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
